@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/ciaac2_resized_64x64.png" type="image/png">
+    <meta name="description" content="...">
+    <meta name="keywords" content="...">
+
+    <title>...</title>
+    <link rel="stylesheet" href="CFTAE.CSS"> <!-- Archivo CSS compartido -->
+</head>
+<body>
+    <header>
+        <!-- Logo izquierdo -->
+        <img src="imagenes/afac.2.webp" alt="Logo Izquierdo" class="logo">
+        <!-- Título central -->
+        <h1>...</h1>
+        <!-- Logo derecho -->
+        <img src="imagenes/ciaac2.webp" alt="Logo Derecho" class="logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank" rel="noreferrer noopener nofollow">Inicio</a></li>
+            <li><a href="CFTAE.html"target="_blank" rel="noreferrer noopener nofollow">CFTAE</a></li>
+            <li><a href="COJT.html"target="_blank" rel="noreferrer noopener nofollow">COJT</a></li>
+            <li><a href="C. CALIDAD.html"target="_blank" rel="noreferrer noopener nofollow">C. CALIDAD</a></li>
+            <li><a href="Diseño.html"target="_blank" rel="noreferrer noopener nofollow">Diseño</a></li>
+            <li><a href="general.html"target="_blank" rel="noreferrer noopener nofollow">Encargado del CIAAC</a></li>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <section class="card">
+            <div class="CFTAE_titulo"><h2>...</h2></div>
+            <p>...</p>
+        </section>
+
+        <section class="card">
+            <img src=".." alt="Imagen Principal" class="imagen-grande">
+            <div class="practicas"><h2>...</h2></div>
+            <p>...</p>
+            <a href="..." download="...">...</a>
+        </section>
+
+        <section class="card">
+            <div class="personal-card" onclick="mostrarModal('...', '...')">
+                <img src="imagenes/en blanco.jfif" alt="..." class="personal-img">
+                <h3>...</h3>
+                <p>...</p>
+            </div>
+            <div class="personal-card" onclick="mostrarModal('...', '...')">
+                <img src="imagenes/en blanco.jfif" alt="..." class="personal-img">
+                <h3>...</h3>
+                <p>...</p>
+            </div>
+            <div class="personal-card" onclick="mostrarModal('...', '...')">
+                <img src="imagenes/en blanco.jfif" alt="..." class="personal-img">
+                <h3>...</h3>
+                <p>...</p>
+            </div>
+            <!-- Resto de las tarjetas de personal -->
+        </section>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 id="modalName">...</h2>
+            <p id="modalTitle">...</p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarModal(nombre, titulo) {
+            document.getElementById('modalName').textContent = nombre;
+            document.getElementById('modalTitle').textContent = titulo;
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function cerrarModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target === document.getElementById('myModal')) {
+                cerrarModal();
+            }
+        }
+    </script>
+
+<footer>
+
+        <p>Consulta tu estatus de capacitación en la plataforma AFAC: <a href="https://www.afac-avciv.com/" rel="noreferrer noopener nofollow" target="_blank">Accede aquí</a></p>
+        <p>Centro Internacional de Adiestramiento en Aviación Civil - Todos los derechos reservados.</p>
+  
+    
+</footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos en el header se ajusten mejor */
+}
+img + div + p{
+    color: #ffcc00;
+}
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+.logo {
+    max-width: 150px; /* Ajuste para dispositivos pequeños */
+    height: auto;
+}
+
+nav {
+    background-color: #0055a5;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap; /* Permite que los elementos de navegación se ajusten */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilo para el contenido */
+.contenido {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contenido h1 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.contenido p {
+    text-align: justify;
+}
+
+/* Imágenes grandes */
+.imagen-grande {
+    width: 80%; /* Aumenta el ancho para pantallas pequeñas */
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las tarjetas */
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card h2 {
+    color: #0055a5;
+}
+
+/* Layout de la sección personal */
+.personal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.personal-card {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.personal-card h3 {
+    color: #003366;
+}
+
+.personal-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.personal-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.personal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.personal-card {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    cursor: pointer;
+}
+
+.personal-card:hover {
+    background-color: #f4f4f4;
+}
+
+.personal-card h3 {
+    color: #003366;
+}
+
+.personal-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.personal-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo del header y footer */
+/* Estilo de pie de página */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    /* Ajustes en la imagen grande */
+    .imagen-grande {
+        width: 100%;
+    }
+
+    /* Header se ajusta en móvil */
+    header h1 {
+        font-size: 28px; /* Reduce el tamaño del título en móvil */
+    }
+
+    .logo {
+        max-width: 120px; /* Ajusta los logos para pantallas pequeñas */
+    }
+
+    /* Ajuste de tarjetas */
+    .card {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    /* Ajuste en la sección de personal */
+    .personal-card {
+        padding: 10px;
+    }
+
+    /* Ajusta la navegación */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Ajuste en el pie de página */
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Para pantallas extra pequeñas (teléfonos en apaisado) */
+@media screen and (max-width: 480px) {
+    .contenido {
+        padding: 10px; /* Ajusta los márgenes en pantallas pequeñas */
+    }
+
+    .card h2 {
+        font-size: 18px; /* Reduce el tamaño de los títulos de las tarjetas */
+    }
+
+    .personal-card h3 {
+        font-size: 16px; /* Ajusta el tamaño de los nombres */
+    }
+}

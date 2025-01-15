@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/ciaac2_resized_64x64.png" type="image/png">
+    <link rel="stylesheet" href="general.css">
+    <title>General Victor Islas Díaz</title>
+</head>
+<body>
+    <header>
+        <!-- Logo izquierdo -->
+        <img src="imagenes/afac.2.webp" alt="Logo Izquierdo" class="logo">
+        <!-- Título central -->
+        <h1>General Victor Islas Díaz</h1>
+        <!-- Logo derecho -->
+        <img src="imagenes/ciaac2.webp" alt="Logo Derecho" class="logo">
+      
+    </header>
+  
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_blank" rel="noreferrer noopener nofollow">Inicio</a></li>
+            <li><a href="CFTAE.html"target="_blank" rel="noreferrer noopener nofollow">CFTAE</a></li>
+            <li><a href="COJT.html"target="_blank" rel="noreferrer noopener nofollow">COJT</a></li>
+            <li><a href="C. CALIDAD.html"target="_blank" rel="noreferrer noopener nofollow">C. CALIDAD</a></li>
+            <li><a href="Diseño.html"target="_blank" rel="noreferrer noopener nofollow">Diseño</a></li>
+            <li><a href="general.html"target="_blank" rel="noreferrer noopener nofollow">Encargado del CIAAC</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <h2>Director del Centro Internacional de Adiestramiento de Aviación Civil</h2>
+    <div class="foto">
+        <img src="imagenes/general islas.jpg" alt="Director del Centro Internacional de Adiestramiento de Aviación Civil" class="png">
+    </div>
+
+    <p>El General de Grupo P.A. D.E.M.A. Ret. Victor Islas Díaz, es originario de Santiago Tulantepec, Hidalgo.
+
+        Egresado de la Escuela Militar de Aviación en 1982 como Subtte. Piloto Aviador y posteriormente cursó la Licenciatura en Administración Militar en la Escuela Superior de Guerra, egresando con especialidad Profesional en Estado Mayor Conjunto.
+        
+        Cuenta con cursos de Mando y Estado Mayor Aéreo.
+        
+        En su trayectoria profesional ha ocupado cargos como: Comandante de Escuadrones, Grupos, Estaciones Aéreas, Bases y Jefaturas de Sección en los Estados Mayores de la Secretaría de la Defensa Nacional y Fuerza Aérea Mexicana.
+        
+        </p>
+        <footer >
+
+            <fieldset class="DATOS_CIAAC_CONTACTO">
+              
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+                <div style="flex: 1; padding-right: 20px; text-align: center;">
+                  
+                    <p style="font-weight: bold;">Centro Internacional de Adiestramiento de Aviación Civil</p>
+                    <p>Nte. 13, Federal, Venustiano Carranza, 15700 Ciudad de México, CDMX</p>
+                    <a href="tel:+5557239300">Llamar al Teléfono</a>
+                    <p>Telefono:+52-55-57-23-93-00</p>
+                    <p>Horario de atención: Lun-Vie 09:00 a 18:00 hrs</p>
+                    <p>Email: ciaac.afac.gob.mx</p>
+                </div>
+            </fieldset>
+          
+            </div>
+            <h3>Ubicación en Google Maps:</h3>
+            <div class="mapa">
+        
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.476586080965!2d-99.14019306457835!3d19.434152746947705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0f17f7a3d7%3A0x4065fd5b9b987bd3!2sNte.%2013%2C%20Venustiano%20Carranza%2C%2015700%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1671772284115!5m2!1ses-419!2smx" 
+                class="mapa-iframe" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </footer>
+    
+        <script>
+        
+            function actualizarHora() {
+                const horaElemento = document.getElementById('reloj');
+                const fecha = new Date();
+                const horas = String(fecha.getHours()).padStart(2, '0');
+                const minutos = String(fecha.getMinutes()).padStart(2, '0');
+                const segundos = String(fecha.getSeconds()).padStart(2, '0');
+                const horaFormateada = `${horas}:${minutos}:${segundos}`;
+                horaElemento.textContent = horaFormateada;
+            }
+    
+            setInterval(actualizarHora, 1000);
+        </script>
+    
+
+
+    
+</body>
+</html>
